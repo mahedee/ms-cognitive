@@ -1,1 +1,0 @@
-https://azure.microsoft.com/en-us/services/cognitive-services/emotion/

@@ -11,7 +11,7 @@ namespace CSHttpClientSample
         static void Main()
         {
             Console.Write("Enter the path to a JPEG image file:");
-            string imageFilePath = @"D:\Projects\Github\ms-cognitive\Emotion\Images\mahedee-buet.jpg";
+            string imageFilePath = @"E:\Github\ms-cognitive\Emotion\Images\mahedee-buet.jpg";
                 //Console.ReadLine();
 
             MakeRequest(imageFilePath);
