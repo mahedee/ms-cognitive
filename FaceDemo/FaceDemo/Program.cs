@@ -13,8 +13,9 @@ namespace FaceDemo
 
         // Replace <Subscription Key> with your valid subscription key.
         //It actually not subscription key. Its cognitive-face01 Key1
+        //To find subscriptionkey, go to Home->CognitiveFace01->ManageKeys (KEY 1)'
         const string subscriptionKey = "e09a05ecbc8f4f26a079fb9d580a75f8";
-            //"ac45c7cf-d3be-400c-95ab-4fc82887da98";
+        //"ac45c7cf-d3be-400c-95ab-4fc82887da98";
 
         // NOTE: You must use the same region in your REST call as you used to
         // obtain your subscription keys. For example, if you obtained your
@@ -24,6 +25,8 @@ namespace FaceDemo
         // Free trial subscription keys are generated in the "westus" region.
         // If you use a free trial subscription key, you shouldn't need to change
         // this region.
+
+        //To find uriBase, go to Home->CognitiveFace01->EndPoint + '/detect'
         const string uriBase =
             "https://southcentralus.api.cognitive.microsoft.com/face/v1.0/detect";
 
@@ -33,9 +36,11 @@ namespace FaceDemo
             Console.WriteLine("Detect faces:");
             Console.Write(
                 "Enter the path to an image with faces that you wish to analyze: ");
-            string imageFilePath = @"E:\Github\ms-cognitive\FaceDemo\Images\mahedee-buet.jpg";
 
-                //Console.ReadLine();
+            //Image path you want to detect
+            string imageFilePath = @"D:\Projects\Github\ms-cognitive\FaceDemo\Images\mahedee-buet.jpg";
+
+            //Console.ReadLine();
 
             if (File.Exists(imageFilePath))
             {
@@ -112,6 +117,8 @@ namespace FaceDemo
         }
 
         // Formats the given JSON string by adding line breaks and indents.
+        //Json Perser
+
         static string JsonPrettyPrint(string json)
         {
             if (string.IsNullOrEmpty(json))
